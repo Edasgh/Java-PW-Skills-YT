@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class NestedLoops {
     public static void main(String[] args) {
+
+        Scanner sc= new Scanner(System.in);
+
 //        for (int i = 1; i<=3; i++){
 //            for(int j =1; j<=3;j++){
 //                System.out.println(" printing i " +i);
@@ -9,7 +12,6 @@ public class NestedLoops {
 //            }
 //        }
 
-        Scanner sc= new Scanner(System.in);
 
 //        code to print asterisks in rectangular pattern commented
 //        System.out.println("Enter row number : ");
@@ -48,12 +50,12 @@ public class NestedLoops {
 
 
         //code to print starts in triangular pattern
-        System.out.println("Enter row number : ");
-        int row=sc.nextInt();
+//        System.out.println("Enter row number : ");
+//        int row=sc.nextInt();
 
 //        String star="*";
 
-        System.out.println("Printing Asterisks");
+//        System.out.println("Printing Asterisks");
 
         //loop to print in rectangular pattern
 //        for(int i=1; i<=row;i++){
@@ -64,14 +66,36 @@ public class NestedLoops {
 
         //loop to print in reverse triangular pattern
 
-                for(int i=row; i>=1;i--){
-                    for(int j=1; j<=i;j++){
-                System.out.print("*");
+//                for(int i=row; i>=1;i--){
+//                    for(int j=1; j<=i;j++){
+//                System.out.print("*");
+//            }
+//                    System.out.println(" ");
+//
+//        }
+
+
+
+
+        System.out.println("Enter a row number : ");
+        int r=sc.nextInt();
+
+//        loop to print pyramid patterned numbers
+        for(int i=1;i<=r;i++){
+            for (int j=1;j<=r-i;j++){
+                System.out.print(" ");
             }
-                    System.out.println(" ");
 
+           for(int k=1; k<=i;k++){
+               System.out.print(k);
+
+           }
+
+           for(int l=i-1; l>=1; l--){
+               System.out.print(l);
+           }
+            System.out.println(" ");
         }
-
 
 
     }

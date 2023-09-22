@@ -34,23 +34,32 @@ public class PyramidPattern {
 //            System.out.println();
 //        }
 
-        System.out.println("Enter a row number : ");
-        int r=sc.nextInt();
 
-        System.out.println("Enter a column number : ");
-        int c= sc.nextInt();
 
-        //loop to print numerical rectangle => same numbers in each row || 1212 [even] and 2121 [odd] pattern
-        for(int i=1;i<=r;i++){
-            for (int j=1;j<=c;j++){
-                if((i+j)%2==0){
-                    System.out.print(1);
-                }else{
-                    System.out.print(2);
-                }
-            }
 
-            System.out.println();
-        }
+//        System.out.println("Enter a row number : ");
+//        int r=sc.nextInt();
+//
+//        System.out.println("Enter a column number : ");
+//        int c= sc.nextInt();
+//
+//        //loop to print numerical rectangle => same numbers in each row || 1212 [even] and 2121 [odd] pattern
+//        for(int i=1;i<=r;i++){
+//            for (int j=1;j<=c;j++){
+//                if((i+j)%2==0){
+//                    System.out.print(1);
+//                }else{
+//                    System.out.print(2);
+//                }
+//            }
+//
+//            System.out.println();
+//        }
+
+
+
+
+
+
     }
 }
